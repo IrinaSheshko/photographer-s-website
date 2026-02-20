@@ -1,0 +1,351 @@
+/* === Общие стили === */
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f8f1f1;
+    color: #5b5b5b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+h2{
+    color: #383e56;
+}
+.btn{
+    color: #979aa5;
+}
+
+/* === Header === */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f8f1f1;
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: #dbd3da;
+}
+
+header h1 {
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 60px;
+    color: dimgrey;
+    transition: color 0.3s;
+}
+
+header h1:hover {
+    color: #383e56;
+}
+
+nav.main-nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav.main-nav li a {
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav.main-nav li a:hover {
+    color: dimgrey;
+}
+
+/* === Hero Section === */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+#myVideo {
+    width: 100%;
+    display: block;
+}
+.hero video {
+    width: 100%;
+    height: auto; /* высота по пропорциям видео */
+    max-height: 80vh; /* не больше 80% высоты экрана */
+    display: block;
+    object-fit: cover; /* заполняет блок без искажений */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* чтобы не выходил за экран */
+    max-width: 600px;
+    padding: 0 10px; /* небольшой отступ */
+    box-sizing: border-box;
+    text-align: center;
+}
+сде
+
+.hero-text h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* === Intro / Signature === */
+.intro .signature {
+    text-align: center;
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 28px;
+    color: gray;
+    margin: 40px 0;
+}
+
+/* === Portfolio === */
+.portfolio-section {
+    padding: 40px 20px;
+}
+
+.portfolio-featured {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.portfolio-featured figure {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.portfolio-featured img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+}
+
+.portfolio-featured figcaption a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: floralwhite;
+    font-style: italic;
+    transition: color 0.3s;
+}
+
+.portfolio-featured figcaption a:hover {
+    color: #c6a9a3;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.portfolio-grid article {
+    text-align: center;
+    max-width: 300px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-grid h3 {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px 0;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.portfolio-grid h3:hover {
+    color: dimgrey;
+    font-size: 26px;
+}
+
+.foto {
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: font-size 0.3s;
+}
+
+.foto:hover {
+    font-size: 14px;
+}
+
+/* === Newsletter === */
+.newsletter {
+    background-color: #f8f1f1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.newsletter h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: dimgrey;
+}
+
+.newsletter p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.newsletter button {
+    background-color: rosybrown;
+    color: dimgrey;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #c6a9a3;
+}
+
+/* === Instagram Gallery === */
+.instagram {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.instagram .insta-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.instagram .insta-gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* === Footer === */
+footer.site-footer {
+    background-color: #e7e7de;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+footer.site-footer a.email {
+    color: dimgrey;
+}
+
+
+/* === Адаптивность === */
+
+/* === Мобильная адаптация === */
+
+/* Планшеты и большие мобильные устройства */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 45px;
+    }
+    .hero-text h2 {
+        font-size: 28px;
+    }
+    .hero-text p {
+        font-size: 16px;
+    }
+    .portfolio-grid article {
+        max-width: 45%;
+    }
+    .instagram .insta-gallery img {
+        max-width: 48%;
+        height: 150px;
+    }
+    .newsletter input[type="email"] {
+        width: 200px;
+    }
+}
+
+/* Средние мобильные устройства */
+@media (max-width: 768px) {
+    nav.main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-text h2 {
+        font-size: 24px;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+    .portfolio-grid article {
+        max-width: 100%;
+    }
+    .instagram .insta-gallery img {
+        max-width: 48%;
+        height: 140px;
+    }
+    .newsletter input[type="email"] {
+        width: 100%;
+    }
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+/* Малые мобильные устройства */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 32px;
+    }
+    .hero-text h2 {
+        font-size: 20px;
+    }
+    .hero-text p {
+        font-size: 12px;
+    }
+    .instagram .insta-gallery img {
+        max-width: 100%;
+        height: 120px;
+    }
+}
