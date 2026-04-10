@@ -2,7 +2,7 @@
 
 Элегантное портфолио фотографа с динамическим фоновым видео и оптимизированной галереей.
 
-## 🚀 [Live Demo](https://IrinaSheshko.github.io/Arianna/)
+## 🚀 [Live Demo](https://IrinaSheshko.github.io/photographer-s-website/)
 
 ---
 
